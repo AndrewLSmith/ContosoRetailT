@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[DimAccount] (
     [AccountKey]          INT            IDENTITY (1, 1) NOT NULL,
     [ParentAccountKey]    INT            NULL,
-    [AccountLabel]        NVARCHAR (200) NULL,
+    [AccountLabel]        NVARCHAR (250) NULL,
     [AccountName]         NVARCHAR (50)  NULL,
     [AccountDescription]  NVARCHAR (50)  NULL,
     [AccountType]         NVARCHAR (50)  NULL,
