@@ -8,7 +8,7 @@ Add-Type -Path "C:\Program Files (x86)\Microsoft SQL Server\120\DAC\bin\Microsof
 $dacService = new-object Microsoft.SqlServer.Dac.DacServices "server=(local)"
 
 #--Load the DACPAC--
-$dacPac = [Microsoft.SqlServer.Dac.DacPackage]::Load("$tcDir\bin\Release\ContosoRetailT1.dacpac")
+$dacPac = [Microsoft.SqlServer.Dac.DacPackage]::Load("$tcDir\bin\Release\ContosoRetailT.dacpac")
 
 #--Deploy your database--
 $dacService.deploy($dacPac, "ContosoRetailQA", "True")
