@@ -39,7 +39,7 @@ UNION ALL
 SELECT @NewAccountKey, @NewAccountName, @NewAccountDescr, @NewAccountType;
 
 --ACT
-EXEC dbo.UpdateAccountDetails @NewAccountKey, NULL, @NewAccountDescr, NULL;
+EXEC dbo.UpdateAccountDetails @NewAccountKey, NULL, 'Blah', NULL;
 
 --ASSERT
 SELECT AccountKey, AccountName, AccountDescription, AccountType
