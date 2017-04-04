@@ -262,7 +262,7 @@
     <Build Include="tSQLt\User Defined Types\AssertStringTable.sql" />
     <Build Include="Security\testContoso.sql" />
     <Build Include="Security\tSQLt.sql" />
-    <Build Include="Scripts\RunTests..sql" />
+    <Build Include="Scripts\RunTests.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assemblies\tSQLtCLR.dll" />
